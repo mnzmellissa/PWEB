@@ -1,0 +1,81 @@
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .box {
+        background-color: rgb(83, 83, 83);
+        color: rgb(174, 174, 174);
+    }
+    .box h2::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .box {
+        background-color: rgb(255, 136, 0);
+        color: rgb(255, 209, 157);
+    }
+    .box h2::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        background-color: rgb(159, 0, 79);
+        color: rgb(221, 108, 164);
+    }
+    .box h2::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .box {
+        background-color: rgb(139, 0, 0);
+        color: rgb(255, 167, 167);
+    }
+    .box h2::before {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .box {
+        background-color: rgb(11, 11, 104);
+        color: rgb(124, 124, 188);
+    }
+    .box h2::before {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .box {
+        background-color: rgb(239, 200, 7);
+        color: rgb(255, 241, 170);
+    }
+    .box h2::before {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .box {
+        background-color: rgb(0, 100, 0);
+        color: rgb(143, 255, 143);
+    }
+    .box h2::before {
+        content: "Verde";
+    }
+}
